@@ -3,7 +3,6 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import About from "./components/About";
 import {Link,Routes,Route} from "react-router-dom"; 
-import Missing from "./components/Missing";
 import "./App.css"
 function App() {
   return (
@@ -24,11 +23,6 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/course" element={<Course />}>
-          {/* <Route index element={<PostPage />}/>
-          <Route path=":id" element={<Post />}/>
-          <Route path="newpost" element={<NewPost />}/> */}
-        </Route>
-        <Route path="*" element={<Missing />}/>
       </Routes>
     </div>
   );
